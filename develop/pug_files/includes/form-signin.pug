@@ -1,0 +1,17 @@
+.row
+	form.col.s12
+		.row
+			.input-field.col.s12
+				input#email.validate(type='email')
+				|  
+				label(for='email') Email
+		.row
+			.input-field.col.s12
+				input#password.validate(type='password')
+				|  
+				label(for='password') Password
+		.row
+			.col.s6
+				a.waves-effect.waves-light.btn Login
+			.col.s6
+				a.modal-trigger.modal-action.modal-close(href="#modalForgotPassword") Forgot password?

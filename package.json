@@ -1,0 +1,68 @@
+{
+  "name": "boilerplate-pug-js-sass",
+  "version": "1.0.0",
+  "description": "A boilerplate with PUG, SASS & JS",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
+  },
+  "keywords": [
+    "starter",
+    "modular",
+    "template",
+    "boilerplate",
+    "ui",
+    "ux",
+    "developer",
+    "html",
+    "pug",
+    "css",
+    "sass",
+    "nunjucks",
+    "only"
+  ],
+  "author": "Masoom Ulhaq S",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.17.5",
+    "chalk": "^1.1.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-data": "^1.2.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-pug": "^3.1.0",
+    "gulp-rimraf": "^0.2.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^2.2.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-watch": "^4.3.10",
+    "materialize-css": "^0.97.7"
+  },
+  "dependencies": {
+    "browser-sync": "^2.17.5",
+    "chalk": "^1.1.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^2.0.13",
+    "gulp-concat": "^2.6.0",
+    "gulp-data": "^1.2.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-pug": "^3.1.0",
+    "gulp-rimraf": "^0.2.1",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^2.2.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-watch": "^4.3.10",
+    "materialize-css": "^0.97.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masoomulhaqs/boilerplate-pug-js-sass.git"
+  },
+  "bugs": {
+    "url": "https://github.com/masoomulhaqs/boilerplate-pug-js-sass/issues"
+  },
+  "homepage": "https://github.com/masoomulhaqs/boilerplate-pug-js-sass#readme"
+}

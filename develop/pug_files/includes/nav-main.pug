@@ -1,0 +1,18 @@
+mixin nav
+	each item in sitemapLinks
+		li
+			a(href=item.href) #{item.title}
+	li
+		a.waves-effect.waves-light.btn.modal-trigger(href="#modalSignIn") Login
+
+nav.teal
+	.nav-wrapper.container
+		a.brand-logo(href='./') #{title}
+		a.button-collapse(href='#', data-activates='mobile-demo')
+			i.material-icons menu
+
+		ul#nav-mobile.right.hide-on-med-and-down
+			+nav
+
+		ul#mobile-demo.side-nav
+			+nav

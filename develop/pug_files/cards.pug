@@ -1,0 +1,96 @@
+extends templates/home.pug
+
+//- PAGE SPECIFIC HEAD SECTION
+block meta
+	title Homepage
+
+//- PAGE SPECIFIC CONTENT SECTION
+block content
+
+	.container-main.container
+		.row
+			.col.s12
+				a(href="./") Go back
+				h2.header Horizontal Card
+		.row
+			.col.s12.m6
+				.card.horizontal
+					.card-image
+						img(src='http://lorempixel.com/100/190/nature/6')
+					.card-stacked
+						.card-content
+							p I am a very simple card. I am good at containing small bits of information.
+						.card-action
+							a(href='#') This is a link
+
+				.card
+					.card-content
+						span.card-title.activator.grey-text.text-darken-4
+							| Card Title
+							i.material-icons.right more_vert
+						p
+							a(href='#') This is a link
+					.card-reveal
+						span.card-title.grey-text.text-darken-4
+							| Card Title
+							i.material-icons.right close
+						p
+							| Here is some more information about this product that is only revealed once clicked on.
+			.col.s12.m6
+				.card-panel
+					span
+						| I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+				.card-panel.teal
+					span.white-text
+						| I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+				.card-panel.orange.lighten-2
+					span
+						| I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
+		.row
+			.col.s12
+				h2.header Cards collection
+				ul.collection
+					li.collection-item.avatar
+						i.material-icons.circle folder
+						|  
+						span.title Title
+						p
+							| First Line
+							br
+							|  Second Line
+						|  
+						a.secondary-content(href='#!')
+							i.material-icons grade
+					li.collection-item.avatar
+						i.material-icons.circle folder
+						|  
+						span.title Title
+						p
+							| First Line
+							br
+							|  Second Line
+						|  
+						a.secondary-content(href='#!')
+							i.material-icons grade
+					li.collection-item.avatar
+						i.material-icons.circle.green insert_chart
+						|  
+						span.title Title
+						p
+							| First Line
+							br
+							|  Second Line
+						|  
+						a.secondary-content(href='#!')
+							i.material-icons grade
+					li.collection-item.avatar
+						i.material-icons.circle.red play_arrow
+						|  
+						span.title Title
+						p
+							| First Line
+							br
+							|  Second Line
+						|  
+						a.secondary-content(href='#!')
+							i.material-icons grade

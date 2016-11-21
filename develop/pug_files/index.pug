@@ -1,0 +1,17 @@
+extends templates/home.pug
+
+//- PAGE SPECIFIC HEAD SECTION
+block meta
+	title Homepage
+
+//- PAGE SPECIFIC CONTENT SECTION
+block content
+
+	.container-main.container
+		h1 #{title}
+		h5 #{caption}
+		p Below are the links of dfdadsf components using #{framework}
+		ul#sitemap
+			each item in sitemapLinks
+				li
+					a(href=item.href) #{item.title}

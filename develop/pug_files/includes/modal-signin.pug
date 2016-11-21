@@ -1,0 +1,14 @@
+#modalSignIn.modal
+	.modal-content
+		.row
+			.col.s12
+				ul.tabs
+					li.tab.col.s3
+						a.active(href='#loginTab') Login
+					li.tab.col.s3
+						a.active(href='#registerTab') Register
+
+			#loginTab.col.s12 
+				include form-signin.pug
+			#registerTab.col.s12 
+				include form-signup.pug

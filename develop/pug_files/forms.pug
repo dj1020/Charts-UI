@@ -1,0 +1,25 @@
+extends templates/home.pug
+
+//- PAGE SPECIFIC HEAD SECTION
+block meta
+	title Form
+
+//- PAGE SPECIFIC CONTENT SECTION
+block content
+
+	.container-main.container
+		.row
+			.col.s6
+				a(href="./") Go back
+		.row
+			.col.s6
+				h4 Login Form
+				include includes/form-signup.pug
+			.col.s6
+				h4 Signup Form
+				include includes/form-signin.pug
+		.row
+			.col.s6
+				include includes/form-forgot-password.pug
+			.col.s6
+				include includes/form-disabled.pug

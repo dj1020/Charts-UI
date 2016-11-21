@@ -1,0 +1,19 @@
+{
+	"title": "UI templates",
+	"caption": "A stater template with HTML, SASS & JS for UI/UX Developers",
+	"framework": "Materialize CSS",
+	"template": "templates/home",
+	"sitemapLinks": [{
+		"href": "./forms.html",
+		"title": "Forms"
+	},{
+		"href": "./cards.html",
+		"title": "Cards"
+	},{
+		"href": "./tabs.html",
+		"title": "Tabs"
+	},{
+		"href": "./modals.html",
+		"title": "Modals"
+	}]
+}
