@@ -4,7 +4,7 @@ module.exports = function(){
 		root: "./",
 		node: "./node_modules/",
 		bower: "./bower_components/",
-		develop: "./develop/",
+		develop: "./src/",
 		build: "./assets/",
 		pug_config: "./pug.config.json"
 	};
