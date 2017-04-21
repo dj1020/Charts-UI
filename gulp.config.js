@@ -13,7 +13,7 @@ module.exports = function(){
 		pug: {
 			config: basePaths.pug_config,
 			src: [
-				basePaths.develop + "pug_files/*.pug" 
+				basePaths.develop + "pug_files/*.pug"
 			],
 			watch: [
 				basePaths.develop + "pug_files/**/*.pug",
@@ -23,10 +23,12 @@ module.exports = function(){
 		},
 		sass: {
 			src: [
-				basePaths.develop + "sass/main.sass" 
+				basePaths.develop + "sass/main.sass",
+				basePaths.develop + "sass/**/*.scss"
 			],
 			watch: [
-				basePaths.develop + "sass/**/*.sass"
+				basePaths.develop + "sass/**/*.sass",
+				basePaths.develop + "sass/**/*.scss"
 			],
 			dest: basePaths.build + "css"
 		},
