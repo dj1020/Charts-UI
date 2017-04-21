@@ -1,0 +1,162 @@
+.page.chat-detail {
+    $headerHeight: 50px;
+    $inputBarHeight: 60px;
+    header {
+        @include clearfix();
+        &::after {
+            height: 0;
+        }
+        > * {
+            display: inline-block;
+            float: left;
+            vertical-align: middle
+        }
+        height: $headerHeight;
+        line-height: $headerHeight;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        background-color: white;
+
+        .fa {
+            text-align: center;
+            line-height: $headerHeight;
+            width: $headerHeight;
+            height: $headerHeight;
+            color: #FE4C0F;
+        }
+        h1 {
+            padding: 0;
+            margin: 0;
+            width: calc(100% - #{$headerHeight} - #{$headerHeight});
+            font-size: 18px;
+            font-weight: normal;
+            text-align: center;
+        }
+    }
+
+    $hGap: 8px;
+    .content {
+        * {
+            // border: 1px solid darkred;
+        }
+        margin-top: $headerHeight;
+        margin-bottom: $inputBarHeight;
+        background: #F5F7F9;
+        overflow-x: hidden;
+        overflow-y: auto;
+        box-sizing: border-box;
+
+        ul > li {
+            > * {
+                display: inline-block;
+                vertical-align: middle;
+            }
+            list-style-type: none;
+            margin: 25px 25px;
+            background: transparent;
+            position: relative;
+
+            p {
+                font-size: 14px;
+                font-weight: lighter;
+                line-height: 1.3;
+                letter-spacing: 0.5px;
+                overflow-wrap: break-word;
+
+                width: calc(100% - 25px);
+                box-sizing: border-box;
+            }
+
+            .avatar {
+                position: absolute;
+                z-index: 20;
+                width: 50px;
+                height: 50px;
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            &.self {
+                p {
+                    margin-right: 25px;
+                    background-color: #2096F3;
+                    padding: 16px 20+25px 16px 20px;
+                    color: #F7FCFF;
+                }
+                .avatar {
+                    right: 0;
+                    bottom: 0;
+                }
+            }
+
+            &.other {
+                p {
+                    margin-left: 25px;
+                    background-color: white;
+                    padding: 16px 20px 16px 20+25px;
+                    color: #969999;
+                }
+                .avatar {
+                    top: 0;
+                    left: 0;
+                }
+            }
+        }
+
+        .time {
+            text-align: center;
+            color: #C6C7C8;
+            letter-spacing: 0.5px;
+            font-size: 16px;
+            font-weight: lighter;
+        }
+    }
+
+    .inputBar {
+        position: fixed;
+        bottom: 0;
+        height: $inputBarHeight;
+        width: 100vw;
+        background-color: white;
+        z-index: 100;
+        // transform: translate(0, -70px);
+
+        input[type=text] {
+            height: $inputBarHeight;
+            width: calc(100% - #{$inputBarHeight});
+            box-sizing: border-box;
+            line-height: $inputBarHeight;
+            padding: 0 70px 0 30px;
+            font-size: 14px;
+            letter-spacing: 0.8px;
+            color: #000000;
+            &:focus {
+                outline: none;
+            }
+        }
+        .fa {
+            display: inline-block;
+            width: $inputBarHeight;
+            height: $inputBarHeight;
+            line-height: $inputBarHeight;
+            vertical-align: middle;
+            font-size: 30px;
+            text-align: center;
+        }
+        .fa-paperclip {
+            color: #FE4D0A;
+            margin-left: -$inputBarHeight;
+        }
+        .fa-paper-plane {
+            font-size: 25px;
+            color: white;
+            background-color: #FE4D0A;
+        }
+    }
+
+}
+
