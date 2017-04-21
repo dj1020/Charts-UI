@@ -1,0 +1,35 @@
+doctype html
+html
+    head
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+
+        title My Charts UI
+
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+        link(rel="stylesheet", href="assets/css/main.css")
+    body
+        header
+            i.fa.fa-bars(aria-hidden="true")
+            h1 Chats
+            i.fa.fa-plus(aria-hidden="true")
+        .content
+            -
+                var chats = [
+                    {img:"Baby_256.png", name: "Joad Day", content: "I have detailed below the most cost effective forms of internet marketing to"},
+                    {img:"2.jpg", name: "Simon Lin", content: "嗨～想要參加的同學們，先來試一下水溫，我們來刻這個，盡量刻，下禮拜假日我們一起來 Review 一下 (或是開個直播？)"},
+                    {img:"2.jpg", name: "Simon Lin", content: "Hi Guys, 寫完囉，下禮拜五前交作業～http://codepen.io/simonlin/pen/WjNVVe?editors=1100"},
+                    {img:"3.jpg", name: "Anny Cheng", content: "刻好+1 https://goo.gl/IxqSwp"},
+                    {img:"4.jpg", name: "Anny Cheng", content: "來交作業囉～我發現我定位上有很大的問題...先看看你們怎麼做的～ https://codepen.io/yoyoyohuang/pen/wdGEaK"},
+                    {img:"1.jpg", name: "閃亮亮", content: "今天回家才要來刻 晚點交作業"},
+                    {img:"2.jpg", name: "Simon Lin", content: "覺得再不寫 Code 我有一天一定會忘光，早上抓了一個UI來刻順便練習一下pug跟複習sass，嗯～應有87分像吧？認真決定不管多忙每週來一刻個介面，有人要++嗎？"},
+                ]
+            ul
+                each chat in chats
+                    li
+                        .avatar
+                            img(src="assets/img/"+chat.img, alt="")
+                        .chat-content
+                            h2.name= chat.name
+                                | <em>Dot</em>
+                            p= chat.content
+                            .chat-time 10:24 PM
