@@ -37,7 +37,7 @@ module.exports = function(){
 			src: [
 				basePaths.node + "jquery/dist/jquery.min.js",
 				basePaths.node + "materialize-css/dist/js/materialize.min.js",
-				basePaths.develop + "js/main.js"
+				basePaths.develop + "js/*.js"
 			],
 			watch: [
 				basePaths.develop + "js/**/*.js"

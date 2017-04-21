@@ -55,7 +55,7 @@ gulp.task("copy:assets", ["recopy:assets"], function(){
 gulp.task("build:html", function(){
 
 	console.log(chalk.cyan("Building markups..."));
-	
+
 	return gulp.src(config.pug.src)
 		.pipe(plumber())
 		.pipe(data(function(){
@@ -96,8 +96,8 @@ gulp.task("build:js", function(){
 	return gulp.src(config.js.src)
 		.pipe(sourcemaps.init())
 		.pipe(plumber())
-		.pipe(uglify())
-		.pipe(concat(config.js.name))
+		// .pipe(uglify())
+		// .pipe(concat(config.js.name))
 		.pipe(plumber.stop())
 		.pipe(gutil.env.type!=="prod" ? sourcemaps.write('.') : gutil.noop())
 		.pipe(gulp.dest(config.js.dest))
