@@ -221,26 +221,26 @@
             overflow:auto;
             position: relative;
 
-            > li {
-                display: inline-block;
-                vertical-align: middle;
-                font-size: 14px;
-                font-weight: lighter;
-                text-align: center;
+            i.fa-camera {
+                background-color: #FE5721;
+            }
+            i.fa-picture-o {
+                background-color: #FF9700;
+            }
+            i.fa-file-text {
+                background-color: #966CFA;
+            }
+            i.fa-user {
+                background-color: #2096F2;
+            }
 
-                .attachType {
-                    padding: 25px 16px;
-                    $iconHeight: 70px;
-                    i {
-                        display: inline-block;
-                        width: $iconHeight;
-                        height: $iconHeight;
-                        font-size: 30px;
-                        background-color: #888888;
-                        line-height: $iconHeight;
-                        border-radius: 50%;
-                        cursor: pointer;
-                    }
+            &:hover {
+                i {
+                    background-color: #888888;
+                }
+                .attachType:hover {
+                    transform: scale(1.15);
+
                     i.fa-camera {
                         background-color: #FE5721;
                     }
@@ -252,6 +252,31 @@
                     }
                     i.fa-user {
                         background-color: #2096F2;
+                    }
+                }
+            }
+
+            > li {
+                display: inline-block;
+                vertical-align: middle;
+                font-size: 14px;
+                font-weight: lighter;
+                text-align: center;
+                cursor: pointer;
+
+                .attachType {
+                    transition: transform 0.3s;
+                    padding: 25px 16px;
+                    $iconHeight: 70px;
+
+                    i {
+                        display: inline-block;
+                        width: $iconHeight;
+                        height: $iconHeight;
+                        font-size: 30px;
+                        line-height: $iconHeight;
+                        border-radius: 50%;
+                        cursor: pointer;
                     }
 
                     span {

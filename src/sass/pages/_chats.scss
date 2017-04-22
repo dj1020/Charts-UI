@@ -51,6 +51,9 @@
             &::after {
                 height: 0;
             }
+            &:hover {
+                background: darken(#F5F7F9, 5%);
+            }
             > * {
                 display: inline-block;
                 float: left;
