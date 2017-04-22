@@ -15,7 +15,7 @@
         width: 100vw;
         position: fixed;
         top: 0;
-        z-index: 100;
+        z-index: 1;
         background-color: white;
 
         .fa {
@@ -24,6 +24,7 @@
             width: $headerHeight;
             height: $headerHeight;
             color: #FE4C0F;
+            cursor: pointer;
         }
         h1 {
             padding: 0;
@@ -40,8 +41,7 @@
         * {
             // border: 1px solid darkred;
         }
-        margin-top: $headerHeight;
-        padding-top: $hGap;
+        padding-top: $hGap + $headerHeight;
         background: #F5F7F9;
         overflow-x: hidden;
         overflow-y: auto;
@@ -59,6 +59,7 @@
             margin-bottom: $hGap;
             padding: 12px;
             background: white;
+            cursor: pointer;
 
             $avatarWidth: 80px;
             .avatar {

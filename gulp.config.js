@@ -33,13 +33,14 @@ module.exports = function(){
 			dest: basePaths.build + "css"
 		},
 		js: {
-			name: 'main.js',
+			// name: 'main.js',
 			src: [
 				basePaths.node + "jquery/dist/jquery.min.js",
 				basePaths.node + "materialize-css/dist/js/materialize.min.js",
 				basePaths.develop + "js/*.js"
 			],
 			watch: [
+				basePaths.develop + "js/*.js",
 				basePaths.develop + "js/**/*.js"
 			],
 			dest: basePaths.build + "js"
